@@ -1,6 +1,6 @@
 <script>
 	import favicon from '$lib/assets/favicon.svg';
-    import Navigation from '$lib/components/Navigation.svelte';
+	import Navigation from '$lib/components/Navigation.svelte';
 
 	let { children } = $props();
 </script>
@@ -9,13 +9,15 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<h1>Social Media Website</h1>
-<Navigation />
+<header>
+	<h1>Social Media Website</h1>
+	<Navigation />
+</header>
 
 {@render children?.()}
 
 <style>
-    :global(body) {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
+	:global(body) {
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+	}
 </style>
